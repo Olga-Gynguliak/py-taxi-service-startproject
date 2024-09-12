@@ -12,7 +12,7 @@ class Manufacturer(models.Model):
 
 
 class Driver(AbstractUser):
-    license_number = models.CharField(max_length=30, null=True, blank=True, unique=True)
+    license_number = models.CharField(max_length=30, blank=True, unique=True)
     username = models.CharField(max_length=150, unique=True)
 
     class Meta:
